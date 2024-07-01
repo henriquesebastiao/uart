@@ -28,6 +28,14 @@ Monitorar porta serial:
 picocom --logfile router-boot.txt -b 115200 /dev/ttyUSB0
 ```
 
+### Observações
+
+Em comunicação serial é importante destacar que, quando usamos um dispositivo conversor de TTL para USB, devemos ligar o pino TX do conversor ao RX do dispositivo, e o RX do conversor ao TX do dispositivo, como mostrado na imagem abaixo:
+
+![serial-pins](https://github.com/henriquesebastiao/uart/assets/85202803/aa345604-63d3-4e29-b704-82923933d68f)
+
+É como se fosse uma cabo crossover de redes, essa é uma boa analogia pra mim 😅.
+
 ## Projetos semelhantes
 
 - [TL-WR841N](https://github.com/adamhlt/TL-WR841N)
