@@ -1,0 +1,62 @@
+﻿
+<script language="JavaScript" src="../dynaform/custom.js" type="text/JavaScript"></script>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body><h1>Ajuda sobre Wireless - Configurações</h1>
+
+<p><b>Nota:</b> A distância ou alcance de operação da sua conexão sem fios varia significativamente com base na posição física do Roteador. Para melhores resultados, posicione seu Roteador Wireless no centro do ambiente de uso, seguindo as dicas abaixo:</p>
+
+<ul>
+<li>Perto do centro da área em que suas estações wireless irão operar.</li>
+<li>Numa posição elevada tal como uma prateleira alta.</li>
+<li>Longe das fontes potenciais de interferência, tais como PCs, microondas, 
+e telefones sem fio.</li>
+<li>Com a Antena na posição vertical.</li>
+<li>Longe das grandes superfícies de metal.</li>
+
+</ul>
+<p><b>Nota:</b> Caso as dicas mencionadas não sejam seguidas, pode-se resultar na degradação significante do desempenho ou na incapacidade de conexão sem fio ao Roteador.
+</p><p><b>Nome da Rede Wireless</b> - Entre com um valor de até 32 caracteres. O mesmo nome (SSID) deve ser atribuído a todos os dispositivos wireless na sua rede.</p>
+<p><strong>Região</strong> - Selecione sua região na lista do menu suspenso.
+ Este campo especifica a região onde a função wireless do 
+Roteador pode ser utilizada. Pode ser ilegal usar a função wireless do 
+Roteador numa região além de uma daquelas especificadas neste arquivo. 
+Se seu país ou a região não estiver na lista, por favor entrar em contato com seu órgão governamental local para seu serviço.</p>
+<p><B>Modo</B> - Selecione o modo de transmissão de acordo com seus dispositivos wireless. </p>
+<p><b>Largura do Canal</b> - A largura da banda do canal wireless.</p>
+<p><b>Canal</b> - Este campo determina a frequência de operação a ser
+ utilizada. Não é preciso mudar o canal wireless a menos que você 
+detecte problemas de interferência com outro ponto de acesso próximo. Se você selecionar auto, então o ponto de acesso irá escolher o melhor canal automaticamente.</p>
+
+<!--<p><b>Taxa Máxima de Transmissão</b> - Você pode limitar a taxa máxima de transmissão do Roteador por este campo.</p>
+<p><B>Taxa</B> - Taxa máxima de transmissão dos dados (É fortemente recomendado que você estabeleça a taxa para <B>Automático</B>, e o Roteador irá estabelecer a taxa para o melhor).</p>-->
+<p><b>Habilitar o Rádio do Roteador Wireless</b> - O rádio wireless do Roteador pode ser habilitado ou desabilitado para permitir o acesso às estações wireless. Se forem habilitadas, as estações wireless poderão acessar o Roteador, senão, as estações wireless não poderão acessar o Roteador.</p>
+<p><b>Habilitar Transmissão SSID</b> - Se você selecionar esta opção, o roteador wireless irá transmitir seu nome (SSID) no ar.</p>
+
+<div id="display_wds" style="display: none;">
+
+<h1>WDS - Parâmetros de configuração</h1>
+
+<p><b>Habilitar WDS</b> - Selecionar para ativar as configurações de WDS do roteador. Com esta função, será possível repetir e estender o sinal de sua rede sem fios através de outros roteadores WDS.
+
+<p><b>Nota:</b> As informações de SSID e MAC listadas abaixo deverão estar configuradas nos roteadores que farão parte da rede WDS.<p>
+
+<p><b>Nome Wireless do AP Remoto</b> - SSID (nome da rede Wireless) ao qual o seu roteador vai se conectar. Também é possível usar a função "Procurar" para listar e selecionar o SSID ao qual se deseja conectar.</p>
+
+<p><b>Endereço MAC do AP Remoto</b> - Digite o endereço MAC da interface LAN do AP remoto ao qual se deseja conectar.</p>
+
+<p><b>Procurar</b> - Clique neste botão para buscar informações relacionadas aos pontos de acesso disponíveis. Na tela relacionada, você poderá encontrar facilmente as informações necessárias para realizar as configurações.</p>
+
+<p><b>Tipo de chave</b> - Esta opção deve ser escolhida de acordo com a configuração de segurança do ponto de acesso de destino. Todos os parâmetros de configuração de segurança devem ser iguais em ambos os roteadores participantes.</p>
+
+<p><b>Indice WEP</b> - Esta opção deve ser escolhida se o tipo de chave for WEP (ASCII) ou WEP (HEXADECIMAL). Ela indica o índice da chave WEP.</p>
+
+<p><b>Tipo de Autenticação</b> - Esta opção deve ser escolhida se o tipo de chave é WEP (ASCII) ou WEP(HEX). Ela indica o tipo de autorização do Ponto de Acesso.</p>
+
+<p><b>Senha</b> - Se o ponto de acesso que seu Roteador irá conectar precisar de uma senha, você precisará preencher a senha no espaço relacionado.</p>
+</div>
+
+<script type="text/javascript">
+document.getElementById("display_wds").style.display = wlan_wds == 1? "" : "none";
+</script>
+</body></html>

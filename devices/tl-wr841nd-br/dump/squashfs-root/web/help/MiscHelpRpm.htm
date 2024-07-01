@@ -1,0 +1,33 @@
+﻿<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><!-- <TP_C_TAG "htmlMiscHelp">//-->
+
+</head><body><h1>Ajuda sobre Firewall - Segurança Avançada</h1>
+
+<p>Através desta página é possível proteger o Roteador de ataques do tipo <b>DoS (Negação de Serviço)</b>, como ataques de <b>inundação</b> tipo <i>TCP-SYN Flood</i>, <i>UDP Flood</i> e <i>ICMP Flood</i>.</p>
+
+<p><font color="#ff0000">Nota: Os <b>Filtros de Inundação TCP-SYN, UDP e ICMP</b> terão efeito apenas quando a função <b>Estatísticas</b> localizada no menu <b>Ferramentas do Sistema</b> estiver <b>habilitada</b>.</font></p>
+
+<ul>
+<li><b>Intervalo para Análise Estatística (de 5 a 60)</b> - Valor padrão é de 10 segundos. Selecione outro valor entre 5 e 60 segundos caso seja necessário. Este intervalo indica a divisão de tempo para análise das estatísticas dos pacotes trafegados. O resultado das estatísticas é usado para análise das <b>inundações</b> tipo TCP-SYN, UDP e ICMP.</li>
+<p>
+<li><b>Proteção DoS (Negação de Serviço)</b> - Ative esta função para habilitar os filtros de inundação listados.</li>
+<p>
+<li><b>Habilitar filtro ICMP</b> - Opção que ativa ou desativa o filtro de ataques de inundação para pacotes ICMP.</li>
+<li><b>Limite para pacotes ICMP (de 5 a 3600)</b> - Valor padrão é de 50 pacotes/segundo. Quando o número de Pacotes ICMP ultrapassar o valor estabelecido, o Roteador irá <b>bloquear</b> o computador responsável imediatamente.</li>
+<p>
+<li><b>Habilitar filtro UDP</b> - Opção que ativa ou desativa o filtro de ataques de inundação para pacotes UDP.</li>
+<li><b>Limite para pacotes UDP (de 5 a 3600)</b> - Valor padrão é de 500 pacotes/segundo. Quando o número de Pacotes UDP ultrapassar o valor estabelecido, o Roteador irá <b>bloquear</b> o computador responsável imediatamente.</li>
+<p>
+<li><b>Habilitar filtro TCP-SYN</b> - Opção que ativa ou desativa o filtro de ataques de inundação para pacotes TCP-SYN.</li>
+<li><b>Limite para pacotes TCP-SYN (de 5 a 3600)</b> - Valor padrão é de 50 pacotes/segundo. Quando o número de Pacotes TCP-SYN ultrapassar o valor estabelecido, o Roteador irá <b>bloquear</b> o computador responsável imediatamente.</li>
+<p>
+<li><b> Ignore o Pacote Ping da porta WAN para o Roteador</b> - Por padrão, esta função está desativada. Quando ativada, pacotes PING oriundos da Internet serão descartados, a fim de evitar ataques de inundação específicos.</li>
+<li><b> Inibir Resposta Ping da porta LAN para o Roteador</b> - Por padrão, esta função está desativada. Se ativada, pacotes PING da interface LAN serão descartados, a fim de defender o roteador contra ataques de alguns tipos de vírus da rede local.</li>
+</ul>
+
+<p>Clique no botão <b>Salvar</b> para armazenar as configurações.</p>
+
+<p>Clique no botão <b>Listar computadores bloqueados</b> para exibir a tabela do computador que foram bloqueados para acesso à rede (por terem cometido alguma infração nas regras do firewall).</p>
+
+
+</body></html>

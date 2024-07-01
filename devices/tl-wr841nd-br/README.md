@@ -28,3 +28,25 @@ Obtivi todo o boot do dispositivo de forma legível, no entando não consegui ac
 <video src="https://github.com/henriquesebastiao/uart/assets/85202803/e952699f-385c-4440-abf8-56c88a756240"></video>
 
 Você pode ver o log do boot do dispositivo no arquivo [bootlog.txt](bootlog.txt).
+
+## Dump da memória flash
+
+Para fazer o dump da memória flash, usei um CH341A e programa `flashrom` com o seguinte comando:
+
+```shell
+flashrom --programmer ch341a_spi -r dump.bin
+```
+
+Para extrair o conteúdo do dump, usei uma versão modificada do script `extract.sh` presente no projeto [TL-WR841N](https://github.com/adamhlt/TL-WR841N).
+
+```shell
+./extract.sh
+```
+
+Este script extrai o squashfs do dump e tambem extrai o conteúdo das outras partições presentes no dump.
+
+O script [extract_parts.sh](extract_parts.sh) extrai o conteúdo de cada uma partições do dump presente no diretório `dump_parts`.
+
+### Dificuldades econtradas
+
+O tempo todo eu estava tentando realizar o dump da memoria flash com o CH341A e usando um SOIC clip, na maioria das vezes era possivel obter o `.bin`, mas na hora de extraír o conteúdo do dump com `unsquashfs` eu recebia um erro ao tentar extrair o filesystem. Depois de muitas tentativas, imaginei que talvez eu estivesse fazendo algo errado, a única alimentação que a placa estava recebendo era a do CH341 (3.3v), então resolvi alimentar a placa com uma fonte de alimentação na mesma voltagem que o roteador trabalhava (9v), e para minha surpresa, o dump foi feito com sucesso e o conteúdo extraído sem problemas. Presumo que a alimentação do CH341A não era suficiente para fazer com que todas as partes da plaça funcionassem corretamente.

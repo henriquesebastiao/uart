@@ -1,0 +1,50 @@
+﻿
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body><h1>Ajuda sobre Redirecionamento de Portas - Aplicações Especiais</h1>
+	 <p>Algumas aplicações exigem várias conexões de entrada e saída, como jogos na Internet, videoconferência, telefonia pela Internet, entre outros. A ferramenta de <b>Aplicações Especiais</b> permite que algumas destas conexões possam funcionar entre clientes/servidores externos e internos.</p>
+	 <p>Uma vez criadas as entradas para Aplicações Especiais, a operação irá operar da seguinte forma:</p> 
+	 <ol type="1"> 
+	 <li>Um computador local faz uma conexão de saída com um computador externo usando um número da porta de destino definido no campo <b>Porta de Disparo.</b></li> 
+	 <li>O Roteador registra esta conexão, abre a porta de entrada ou as portas associadas com esta entrada na tabela <b>Porta de Disparo</b>, e as associa com o computador local.</li> 
+	 <li>Quando necessário, o computador externo poderá se conectar ao computador local usando uma das portas definidas no campo <b>Portas de Entrada</b>.</li>
+	 </ol> 
+	 <p><b>Na página principal é possível visualizar as informações da seguinte forma</b>:</p> 
+	 <ul> 
+	 <li><b>Porta de Disparo</b> - porta para o tráfego de saída. Uma conexão de saída usando esta porta irá disparar esta regra.</li>
+	 <li><b>Protocolo de Disparo</b> - protocolo usado para as Portas de Disparo, como <b>TCP, </b><b>UDP</b>, ou <b>Todos</b> (todos os protocolos suportados pelo Roteador).</li> 
+	 <li><b>Portas de Entrada</b> - porta ou uma série de portas usadas pelo sistema remoto quando ele responde para o pedido de saída. Uma resposta usando uma destas portas será enviada ao computador que disparou esta regra. Você pode entrar com no máximo 5 grupos de portas (ou seções da porta). Cada grupo de portas deve ser separado com uma vírgula ",". Por exemplo: 2000-2038, 2046, 
+2050-2051, 2085, 3010-3030.</li>
+	 <li><b>Protocolo de Entrada</b> - protocolo usado para a Porta de Entrada, como <b>TCP, </b><b>UDP</b>, ou <b>Todos </b>(todos os protocolos suportados pelo Roteador).</li> 
+	 <li><b>Estado</b> - estado de uso desta entrada.</li> 
+	 <li><b>Modificar</b> - usado para Modificar ou Apagar uma entrada existente.</li>
+	<!-- <li><b>Aplicações Comuns</b> - Algumas aplicações populares já listadas na lista suspensa do Protocolo de Entrada.</li> -->
+	 </ul> 
+	 <p><b>Para adicionar uma nova regra, siga as orientações abaixo</b>:</p> 
+	 <ol type="1"> 
+	 <li>Clique no botão <b>Adicionar.</b></li> 
+	 <li>Entre um número da porta usada pela aplicação para enviar um pedido de saída na caixa Porta de Disparo.</li> 
+	 <li>Selecione o protocolo usado para a <b>Porta de Disparo</b> da lista suspensa do Protocolo de Disparo, sendo <b>TCP</b>, <b>UDP</b>, ou <b>Todos.</b></li> 
+	 <li>Entre a série dos números da porta usados pelo sistema remoto quando ele responde ao pedido do computador na caixa Portas de Entrada.</li> 
+	 <li>Selecione o protocolo usado para a série <b>Portas de Entrada</b> da lista suspensa, sendo <b>TCP</b>, <b>UDP</b>, ou <b>Todos.</b></li> 
+	 <li>Selecione a opção <b>Habilitado</b> na lista suspensa <b>Estado.</b></li> 
+	 <li>Clique no botão <b>Salvar</b> para armazenar a nova regra.</li> 
+	 </ol> 
+	 <p>Há muitas aplicações populares na lista <b>Aplicações Comuns</b>. Você pode selecionar uma aplicação e depois as caixas da Porta de Disparo e das Portas de Entrada serão preenchidas automaticamente. Isso tem o mesmo efeito que adicionar uma nova regra.</p> 
+	 <p><b>Para Modificar ou Apagar uma entrada existente</b>:</p> 
+	 <ol type="1"> 
+	 <li>Localize a entrada desejada na tabela.</li> 
+	 <li>Clique em <b>Modificar</b> ou <b>Apagar</b> como desejado na coluna <b>Modificar.</b></li> 
+	 </ol> 
+	 <p>Clique no botão <b>Habilitar todos</b> para ativar todas as entradas.</p> 
+	 <p>Clique no botão <b>Desabilitar</b> para desativar todas as entradas.</p> 
+	 <p>Clique no botão <b>Apagar todos</b> para apagar todas as entradas.</p> 
+	 <p>Clique no botão <b>Avançar</b> para ir à próxima página. Clique no botão <b>Voltar</b> para retornar à página anterior. 
+	 </p><p><b>Nota:</b></p> 
+	 <ol type="1"> 
+	 <li>Quando a conexão de disparo for liberada as portas correspondentes abertas serão fechadas.</li> 
+	 <li>Cada regra pode ser usada apenas por um computador na rede local por vez. A conexão de disparo de outros computadores na rede local será recusada.</li> 
+	 <li> As séries de <b>Portas de Entrada</b> não podem se sobrepor.</li> 
+	 </ol> 
+
+</body></html>

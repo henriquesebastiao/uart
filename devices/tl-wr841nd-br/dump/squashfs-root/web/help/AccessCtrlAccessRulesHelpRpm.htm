@@ -1,0 +1,84 @@
+﻿
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body><div>
+	<h1>Ajuda Sobre Gerenciamento de Regras - Controle de Acesso</h1>
+
+<p>O Roteador fornece uma função de controle de acesso à internet robusta e adequada, que pode controlar as atividades na internet dos computadores conectados na rede local. Ainda, é possível combinar flexivelmente informações de <b>Estações</b>, <b>Alvos</b> e <b>Horários</b> para restringir a navegação destes computadores à Internet.
+</p>
+
+<p>
+Nesta tela é possível visualizar as seguintes informações:
+</p>
+<ul>
+		<li><b>Habilitar Controle de Acesso à Internet</b> - Selecione esta opção para ativar a função de Controle do Acesso à Internet. Desta forma, as regras a serem criadas terão efeito nas configurações do roteador.</li>
+
+		<li><b>Nome da Regra</b> - Exibe o nome da regra criada. Este nome deve ser diferente dos demais.</li>
+
+		<li><b>Estações</b> - Exibe aqui as estações selecionadas na regra correspondente.</li>
+
+		<li><b>Alvo</b> - Exibe aqui o alvo selecionado na regra correspondente.</li>
+
+		<li><b>Horário</b> - Exibe aqui o período selecionado na regra correspondente.</li>
+
+		<li><B>Estado</B>  - Marque esta opção para ativar uma entrada específica.</li>
+
+		<li><b>Modificar</b> - Aqui você pode <b>Editar</b> ou <b>Apagar</b> uma regra existente.</li>
+</ul>
+
+<p><b>Por exemplo</b>: 
+		Se você deseja permitir a estação com endereço MAC <b>00-11-22-33-44-AA</b> acessar o site <b>www.google.com.br</b> apenas das <b>18:00</b> às <b>20:00</b> aos <b>Sábados e Domingos</b>, e <b>proibir</b> outros computadores da rede local de acessar a Internet, você deverá seguir as configurações abaixo:
+ </p>
+ 	<ol type="1">
+		<lI>Nós recomendamos que você clique no botão <b>Assistente de Configuração</b> para finalizar todas as configurações a seguir.</lI>
+		<li>Clique em <b>Regras</b> do menu <b>Controle de Acesso</b> à esquerda para retornar para a página central de Regras. Selecione a opção <b>Habilitar Controle de Acesso à Internet</b> e marque o item <b>"Permitir os pacotes especificados por qualquer política de controle de acesso a passar Através do Roteador"</b>.</li>
+		<li>Clique em <b>Estações</b> do menu <b>Controle de Acesso</b> à esquerda para entrar na página de cadastro de computadores. Adicione uma nova entrada cuja descrição da estação seja Computador_1 e o endereço MAC <b>00-11-22-33-44-AA</b>. As informações aqui representam a fonte de origem da regra.</li>
+
+		<li>Clique em <b>Alvos</b> do menu <b>Controle de Acesso</b> à esquerda para entrar na página de cadastro de alvos. Adicione uma nova entrada com a descrição Alvo_1 e o nome do domínio <b>www.google.com.br</b>. As informações aqui representam a fonte de destino da regra.</li>
+
+		<li>Clique em <b>Horários</b> do menu <b>Controle de Acesso</b> à esquerda para entrar na página de configurações de horários. Adicione uma nova entrada com a descrição Horario_1, selecione os dias <b>Sáb</b> e <b>Dom</b>, defina nos campos <i>Período Inicial</i> <b>18:00</b> e <i>Período Final</i> <b>20:00</b>. As informações aqui representam o tempo de atividade da regra.</li>
+
+		<li>Clique no botão <b>Adicionar</b> para adicionar uma nova regra como segue:</li>
+	</ol>
+	<table class="space" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr><td width="24">&nbsp;</td>
+	<td>
+		<ul>
+			<li>No campo <b>Nome da Regra</b>, defina um nome para a nova regra criada, como Regra_1.</li>
+			<li>No campo <b>Estações</b>, selecione Computador_1.</li>
+			<li>No campo <b>Alvo</b>, selecione Alvo_1.</li>
+			<li>No campo <b>Horário</b>, selecione Horario_1.</li>
+			<li>No campo <b>Estado</b>, selecione Habilitado.</li>
+			<li>Clique no botão <b>Salvar</b> para armazenar as configurações.</li>
+		</ul>
+	</td>
+	</tr></tbody></table>
+	<p>Ao retornar à página principal, será possível visualizar as seguintes informações:</p>
+
+<table class="space" align="center" border="1" cellpadding="0" cellspacing="0">
+<tbody><tr>
+	<td class="LISTB" width="30" align="center">ID</td>
+	<td class="LISTB" width="100" align="center">Nome da Regra</td>
+	<td class="LISTB" width="100" align="center">Estações</td>
+	<td class="LISTB" width="100" align="center">Alvo</td>
+	<td class="LISTB" width="100" align="center">Horário</td>
+	<td class="LISTB" width="50" align="center">Estado</td>
+	<td class="LISTB" align="center" nowrap="nowrap">Modificar</td>
+</tr>
+<tr>
+	<td width="30" align="center">1</td>
+	<td width="100" align="center">Regra_1</td>
+	<td width="100" align="center">Computador_1</td>
+	<td width="100" align="center">Alvo_1</td>
+	<td width="100" align="center">Horario_1</td>
+	<td width="50" align="center"><input disabled type="checkbox" checked></td>
+	<td align="center" nowrap="nowrap">Editar/Apagar</td>
+</tr>
+</tbody></table>
+	<p>Clique no botão <b>Assistente de Configuração</b> para criar uma nova regra de entrada.</p>
+	<p>Clique no botão <b>Adicionar</b> para adicionar uma nova regra de entrada .</p>
+	<p>Clique no botão <b>Habilitar todos</b> para ativar todas as regras na lista.</p>
+	<p>Clique no botão <b>Desabilitar</b> para desativar todas as regras na lista.</p>
+	<p>Clique no botão <b>Apagar todos</b> para apagar todas as entradas da tabela.</p>
+	<p>Clique no botão <b>Avançar</b> para ir para a próxima página, ou clique no botão <b>Voltar</b> para retornar à página anterior.</p>
+</div></body></html>

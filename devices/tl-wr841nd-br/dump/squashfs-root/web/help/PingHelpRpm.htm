@@ -1,0 +1,20 @@
+﻿
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body><h1>Ajuda sobre Ferramentas do Sistema - Diagnóstico</h1> 
+	 <p>As ferramentas de diagnóstico (Ping e Traceroute) permitem verificar as conexões físicas dos computadores conectados em sua rede local. São testes que permitem averiguar se um link está ativo ou não.</p> 
+	 <p><b>Ferramenta de Diagnóstico</b> - Selecione entre as opções:</p> 
+	 <ul> 
+	 <li><b>Ping</b> - Esta ferramenta de diagnóstico resolve o problema de conectividade, analisa o alcance, e a resolução do nome para um dado computador ou gateway usando um pacote de "pedido de eco obrigatório" do Protocolo de Controle de Mensagem Internet (ICMP) para extrair uma Resposta de eco ICMP de um computador ou gateway de destino. Você pode usar o ping para testar ambos o endereço IP numérico ou o nome do domínio. Se é possível obter respostas do endereço IP, mas não do domínio, provavelmente há algum problema nas configurações de DNS do roteador.</li> 
+	 <li><b>Traceroute</b> - Esta ferramenta de diagnóstico determina o caminho levado para um dado computador enviando mensagens do pedido de eco do Protocolo de Controle de Mensagem Internet (ICMP)com variação dos valores de "Tempo de Vida" (TTL) para o destino. Cada gateway ao longo do caminho é exigido para reduzir o TTL num Pacote IP por pelo menos 1 antes do envio. Efetivamente, o TTL é um contador máximo de link. Quando o TTL num pacote alcançar 0, o gateway deverá retornar uma resposta de Tempo excedente do ICMP para seu Roteador. O Traceroute determina o caminho enviando a primeira mensagem do pedido do eco com um TTL de 1 e incrementando o TTL por 1 sobre cada transmissão subseqüente até que o alvo responda ou que o número máximo de saltos seja alcançado. O número máximo de saltos é 20 por padrão e pode ser especificado no campo "TTL Máximo de Traceroute". O caminho é determinado examinando as mensagens do Tempo Excedente do ICMP retornadas por gateways intermediários e a mensagem de reply do eco retornada pelo destino. Entretanto, alguns gateways não retornam as mensagens do Tempo Excedente para pacotes com valores TTL expirados e são invisíveis para a ferramenta do traceroute. Neste caso, uma fila de asteriscos (*) é exibida para aquele salto.</li> 
+	 </ul> 
+
+	<p><b>Endereço IP / Domínio</b> - Digite o Endereço IP ou Nome do Domínio do computador cuja conexão você deseja diagnosticar.</p> 
+	<p><b>Número de Ping</b> - Digite a quantidade de mensagens do pedido do Eco a ser enviado. O valor padrão é 4.</p>
+	<p><b>Tamanho do Pacote</b> - Digite o número de dados em Bytes a ser enviado. O padrão valor é 64.</p>
+	<p><b>Tempo limite</b> - Tempo para aguardar uma resposta, em milisegundos. O valor padrão é 800.</p>
+	<p><b>Traceroute Máximo (TTL)</b> - Estabelece o número máximo de saltos (TTL máximo a ser alcançado) no caminho para buscar o alvo (destino). O valor padrão é 20.</p>
+	 
+	 <p>Clique no botão <b>Iniciar</b> para iniciar o procedimento de diagnóstico.</p>
+
+</body></html>

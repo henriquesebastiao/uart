@@ -1,0 +1,22 @@
+﻿
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head><body><h1>Ajuda sobre Firewall - Gerenciamento Remoto</h1>
+
+<p>Esta página permite controlar o acesso remoto às configurações de seu Roteador, ou seja, é possível permitir com que estas configurações sejam acessadas através da Internet.</p>
+<ul>
+<li><b>Porta para Gerenciamento WEB</b> - O acesso para esta interface WEB utiliza normalmente a porta do serviço padrão 80 - HTTP. Este número também é utilizado para definir o acesso remoto às configurações do Roteador. Para maior segurança, você pode alterar a porta HTTP de gestão para um número diferente, como <b>88</b>, <b>8080</b> ou <b>8888</b> (recomendados).</li>
+<p>
+<li><b>Endereço IP para Gerenciamento Remoto</b> - Por padrão de fábrica, o número de IP <b>0.0.0.0</b> define que esta função esteja <b>desativada</b>. Para ativar esta função, altere este endereço para um que seja <b>válido</b> (IP de internet). Neste campo, você deve digitar o endereço IP do link de internet que está conectando o computador que tem permissão para acessar remotamente estas configurações. Se digitar <b>255.255.255.255</b>, todos os computadores que estiverem conectados à internet poderão acessar estas configurações, desde que tenham o <i>Nome de Usuário</i> e <i>Senha</i> de acesso.</li>
+</ul>
+<p>Caso necessite ativar esta função, para acessar as configurações do Roteador remotamente você deverá digitar - a partir do computador remoto - o endereço IP da interface WAN deste Roteador. Caso altere o número da <b>Porta de Gestão HTTP</b>, você deve digitar o endereço IP de acesso remoto seguido de <b><font color="#ff0000">dois pontos</font></b> e o <b><font color="#ff0000">número da porta HTTP</font></b> que foi definida.</p> 
+<p>Por exemplo, se o endereço da interface WAN de seu roteador é <b>202.96.12.8</b> e você definir o número da porta HTTP para <b>8080</b>, então você deverá digitar o endereço <u><b>http://202.96.12.8:8080</b></u> para obter acesso remoto a estas configurações. Será pedido a você que entre com o <i>Nome de Usuário</i> e <i>Senha</i> de acesso.</p>
+
+<p><b>Nota:</b></p>
+<ol type="1">
+<li>Algumas portas  são geralmente utilizadas para outros serviços (ex.:  21, 25, 110, 119, 139, 145 e 445). Por motivos de segurança estas portas são restritas.</li>
+<li>Recomendamos que a senha padrão 'admin' de acesso a estas configurações seja <b>alterada</b>.</li>
+<li>Se a porta de gestão HTTP entrar em conflito com aquela usada para uma entrada das configurações de <b>Servidor Virtual</b>, a entrada será automaticamente <b>desabilitada</b> depois que estas configurações forem salvas.</li>
+</ol>
+
+</body></html>

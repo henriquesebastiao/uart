@@ -1,0 +1,51 @@
+<LINK href="../dynaform/css_help.css" rel=stylesheet>
+<!-- <TP_C_TAG "htmlMiscHelp">//-->
+<SCRIPT language="javascript" src="../dynaform/custom.js" type="text/javascript"></SCRIPT>
+<H1>Ajuda sobre as Informações</H1>
+<P> A página <B>Status</B> apresenta o sistema e a configuração atual do roteador. Todas informações são somente leitura.
+<P><B>Interface LAN</B> - Os seguintes parâmetros se aplicam às portas LAN do roteador. Você pode configurá-la na página <B>Interfaces LAN/WAN -> LAN</B> .
+<UL>
+<LI><B>Endereço MAC</B> - O endereço físico do roteador, como visto a partir da LAN.
+<LI><B>Endereço IP</B> - O endereço de IP da LAN do roteador.
+	<LI><B>Máscara de sub-rede</B> - A máscara de sub-rede associada ao endereço IP.</LI>
+</UL>
+
+<P><B>Wireless</B> - Estas são as configurações atuais ou informação do Wireless. Você pode configurá-las na página <B> Wireless -> Configurações</B> .
+<UL>
+  	<LI><B>Interface de Rádio</B> - Indica se o status do rádio wireless do Roteador está ativado ou desativado.
+    <LI><B>Nome (SSID)</B> - Nome da rede sem fio do roteador.
+	<LI><B>Modo</B> - O modo wireless atual o qual o Roteador funciona. </LI>
+    <LI><B>Largura do Canal</B> - A largura da banda do canal.</LI>
+	<LI><B>Canal</B> -  Canal wireless em uso. </LI>
+	<LI><B>Endereço MAC</B> - O endereço físico do Roteador, como visto no WLAN.</LI>
+<SCRIPT type="text/javascript">
+if(wlan_wds)
+	document.write("<LI><B>Status WDS</B> - O status da conexão WDS, Inic: A conexão WDS caiu; Scan: Tente encontrar a AP; Autent: Tente autenticar; ASSOC: Tente associação; Run: Associação feita com sucesso.</LI>");
+</SCRIPT>
+	</UL>
+<P><B>Interface WAN</B> - Os seguintes parâmetros se aplicam as portas WAN do Roteador. Você pode configurá-los na página <strong><B>Interfaces LAN/WAN -> WAN</B></strong> .
+<UL>
+<LI><B>Endereço MAC</B> - O endereço físico da porta WAN, como visto a partir da
+ Internet.
+<LI><B>Endereço IP</B> - O endereço atual do IP da WAN (Internet). Este campo estará em branco ou
+	0.0.0.0 se o endereço de IP for atribuído dinamicamente e não houver conexão com a 
+	Internet.
+<LI><B>Máscara de Sub-rede</B> - A máscara de Sub-rede associada com o endereço IP da WAN.
+<LI><B>Gateway Padrão</B> - O Gateway usado atualmente pelo Roteador é apresentado aqui. Quando você usar <b>IP Dinâmico</b> como conexão de Internet, o botão <B>Renovar</B> irá aparecer aqui. Clique no botão <B>Renovar</B> para obter os novos parâmetros de IP dinamicamente
+a partir do ISP. E se você conseguir um endereço de IP o botão <b>Liberar</b> aparecerá aqui. Clique em <b>Liberar</b> para liberar o endereço de IP que o Roteador obteve a partir do ISP.
+<LI><B>Servidor DNS</B> - O endereço IP do servidor DNS (Sistema de Nomes de Domínios) atualmente usado pelo roteador. Múltiplas configurações do IP do DNS são comuns. Normalmente, o primeiro servidor de DNS disponível será usado.</li>
+<LI><B>Tempo Online</B> - O tempo que você fica online. Quando você usa o <strong>PPPoE</strong> 
+      como conexão WAN, o tempo online é apresentado aqui. Clique no botão <strong>Conectar</strong>
+      ou <strong>Desconectado </strong>para se conectar ou desconectar da Internet.</LI>
+</UL>
+<P><B>Conexão Secundária</B> - Além do PPPoE, se você usar uma conexão extra para se conectar a rede local fornecida pelo ISP, em seguida, os parâmetros dessa conexão secundária será apresentado para esta área.</P>
+<P><B>Estatísticas de Tráfego</B> - As estatísticas de tráfego do roteador.
+<UL>
+	<LI><B>Enviado (Bytes)</B> - Tráfego que contado em bytes que foi enviado a partir da porta WAN.</li>
+	<LI><B>Enviado (Pacotes)</B> - Tráfego que contado em pacotes que foi enviado a partir da porta WAN.</LI>
+	<li><b>Recebido (Bytes)</b> - Tráfego que contado em bytes que foi recebido a partir da porta WAN.</li>
+	 <li><b>Recebido (Pacotes)</b> - Tráfego que contado em pacotes que foi recebido a partir da porta WAN.</li>
+</UL>
+<P><B>Término do sistema</B> -  A duração do tempo desde que o roteador foi ligado pela última vez ou restaurado.
+<P>Clique no botão <B>Atualizar</B> para conseguir o status anterior e as últimas configurações do roteador.
+
