@@ -25,4 +25,6 @@ Para identicar quais eram os pinos da porta serial, consultei o projeto [TL-WR84
 
 Obtivi todo o boot do dispositivo de forma legível, no entando não consegui acesso a um shell, pois é necessário um login e senha que são desconhecidos.
 
+https://github.com/henriquesebastiao/uart/assets/85202803/e952699f-385c-4440-abf8-56c88a756240
+
 Você pode ver o log do boot do dispositivo no arquivo [bootlog.txt](bootlog.txt).
